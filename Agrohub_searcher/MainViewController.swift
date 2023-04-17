@@ -1,11 +1,13 @@
-// ViewController.swift
+// MainViewController.swift
 // AgroHub_Searcher. Created by Zlata Guseva.
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
+    var mainView = MainView()
     override func viewDidLoad() {
         super.viewDidLoad()
+        view = mainView
         // Do any additional setup after loading the view.
     }
 }

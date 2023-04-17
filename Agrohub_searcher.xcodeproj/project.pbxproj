@@ -8,18 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		CE3CC56229ED57A40043094E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CC56129ED57A40043094E /* AppDelegate.swift */; };
-		CE3CC56629ED57A40043094E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CC56529ED57A40043094E /* ViewController.swift */; };
+		CE3CC56629ED57A40043094E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CC56529ED57A40043094E /* MainViewController.swift */; };
 		CE3CC56B29ED57A80043094E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3CC56A29ED57A80043094E /* Assets.xcassets */; };
 		CE3CC56E29ED57A80043094E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3CC56C29ED57A80043094E /* LaunchScreen.storyboard */; };
+		CE3CC57829ED61D70043094E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CC57729ED61D70043094E /* MainView.swift */; };
+		CE3CC57A29ED62E50043094E /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CC57929ED62E50043094E /* MainCollectionViewCell.swift */; };
+		CE3CC57D29ED639C0043094E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE3CC57C29ED639C0043094E /* SnapKit */; };
+		CE3CC58029ED63F20043094E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = CE3CC57F29ED63F20043094E /* Moya */; };
+		CE3CC58329ED642F0043094E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE3CC58229ED642F0043094E /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE3CC55E29ED57A40043094E /* Agrohub_searcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agrohub_searcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3CC56129ED57A40043094E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE3CC56529ED57A40043094E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE3CC56529ED57A40043094E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE3CC56A29ED57A80043094E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3CC56D29ED57A80043094E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3CC56F29ED57A80043094E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3CC57729ED61D70043094E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CE3CC57929ED62E50043094E /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3CC58329ED642F0043094E /* Kingfisher in Frameworks */,
+				CE3CC58029ED63F20043094E /* Moya in Frameworks */,
+				CE3CC57D29ED639C0043094E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				CE3CC56129ED57A40043094E /* AppDelegate.swift */,
-				CE3CC56529ED57A40043094E /* ViewController.swift */,
+				CE3CC56529ED57A40043094E /* MainViewController.swift */,
+				CE3CC57729ED61D70043094E /* MainView.swift */,
+				CE3CC57929ED62E50043094E /* MainCollectionViewCell.swift */,
 				CE3CC56A29ED57A80043094E /* Assets.xcassets */,
 				CE3CC56C29ED57A80043094E /* LaunchScreen.storyboard */,
 				CE3CC56F29ED57A80043094E /* Info.plist */,
@@ -79,6 +91,11 @@
 			dependencies = (
 			);
 			name = Agrohub_searcher;
+			packageProductDependencies = (
+				CE3CC57C29ED639C0043094E /* SnapKit */,
+				CE3CC57F29ED63F20043094E /* Moya */,
+				CE3CC58229ED642F0043094E /* Kingfisher */,
+			);
 			productName = Agrohub_searcher;
 			productReference = CE3CC55E29ED57A40043094E /* Agrohub_searcher.app */;
 			productType = "com.apple.product-type.application";
@@ -107,6 +124,11 @@
 				Base,
 			);
 			mainGroup = CE3CC55529ED57A40043094E;
+			packageReferences = (
+				CE3CC57B29ED639C0043094E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CE3CC57E29ED63F20043094E /* XCRemoteSwiftPackageReference "Moya" */,
+				CE3CC58129ED642F0043094E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = CE3CC55F29ED57A40043094E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -174,8 +196,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3CC56629ED57A40043094E /* ViewController.swift in Sources */,
+				CE3CC56629ED57A40043094E /* MainViewController.swift in Sources */,
+				CE3CC57829ED61D70043094E /* MainView.swift in Sources */,
 				CE3CC56229ED57A40043094E /* AppDelegate.swift in Sources */,
+				CE3CC57A29ED62E50043094E /* MainCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +411,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE3CC57B29ED639C0043094E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		CE3CC57E29ED63F20043094E /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		CE3CC58129ED642F0043094E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE3CC57C29ED639C0043094E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE3CC57B29ED639C0043094E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CE3CC57F29ED63F20043094E /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE3CC57E29ED63F20043094E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		CE3CC58229ED642F0043094E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE3CC58129ED642F0043094E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE3CC55629ED57A40043094E /* Project object */;
 }
