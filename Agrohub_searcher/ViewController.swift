@@ -1,19 +1,11 @@
-//
-//  ViewController.swift
-//  Agrohub_searcher
-//
-//  Created by Злата Гусева on 17.04.2023.
-//
+// ViewController.swift
+// AgroHub_Searcher. Created by Zlata Guseva.
 
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
-
