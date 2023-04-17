@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE026F2A29EDB12700B0A4D1 /* MainLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE026F2929EDB12700B0A4D1 /* MainLayout.swift */; };
+		CE026F2C29EDB1E600B0A4D1 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE026F2B29EDB1E600B0A4D1 /* UICollectionView+Extension.swift */; };
+		CE026F2E29EDB21800B0A4D1 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE026F2D29EDB21800B0A4D1 /* Protocols.swift */; };
+		CE026F3429EDD7E900B0A4D1 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE026F3329EDD7E900B0A4D1 /* ItemView.swift */; };
+		CE026F3629EDD7FA00B0A4D1 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE026F3529EDD7FA00B0A4D1 /* ItemViewController.swift */; };
 		CE3CC56229ED57A40043094E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CC56129ED57A40043094E /* AppDelegate.swift */; };
 		CE3CC56629ED57A40043094E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CC56529ED57A40043094E /* MainViewController.swift */; };
 		CE3CC56B29ED57A80043094E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3CC56A29ED57A80043094E /* Assets.xcassets */; };
@@ -21,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE026F2929EDB12700B0A4D1 /* MainLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLayout.swift; sourceTree = "<group>"; };
+		CE026F2B29EDB1E600B0A4D1 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		CE026F2D29EDB21800B0A4D1 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		CE026F3329EDD7E900B0A4D1 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		CE026F3529EDD7FA00B0A4D1 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		CE3CC55E29ED57A40043094E /* Agrohub_searcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agrohub_searcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3CC56129ED57A40043094E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3CC56529ED57A40043094E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE026F2F29EDB2AC00B0A4D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE026F2B29EDB1E600B0A4D1 /* UICollectionView+Extension.swift */,
+				CE3CC58629ED663E0043094E /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE026F3029EDB2C800B0A4D1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CE3CC56129ED57A40043094E /* AppDelegate.swift */,
+				CE026F2F29EDB2AC00B0A4D1 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CE026F3129EDD7B600B0A4D1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CE3CC57729ED61D70043094E /* MainView.swift */,
+				CE3CC56529ED57A40043094E /* MainViewController.swift */,
+				CE3CC57929ED62E50043094E /* MainCollectionViewCell.swift */,
+				CE026F2929EDB12700B0A4D1 /* MainLayout.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CE026F3229EDD7C900B0A4D1 /* ProductItem */ = {
+			isa = PBXGroup;
+			children = (
+				CE026F3329EDD7E900B0A4D1 /* ItemView.swift */,
+				CE026F3529EDD7FA00B0A4D1 /* ItemViewController.swift */,
+			);
+			path = ProductItem;
+			sourceTree = "<group>";
+		};
 		CE3CC55529ED57A40043094E = {
 			isa = PBXGroup;
 			children = (
@@ -66,11 +114,10 @@
 		CE3CC56029ED57A40043094E /* Agrohub_searcher */ = {
 			isa = PBXGroup;
 			children = (
-				CE3CC56129ED57A40043094E /* AppDelegate.swift */,
-				CE3CC56529ED57A40043094E /* MainViewController.swift */,
-				CE3CC57729ED61D70043094E /* MainView.swift */,
-				CE3CC57929ED62E50043094E /* MainCollectionViewCell.swift */,
-				CE3CC58629ED663E0043094E /* UIColor+Extension.swift */,
+				CE026F3229EDD7C900B0A4D1 /* ProductItem */,
+				CE026F3129EDD7B600B0A4D1 /* Main */,
+				CE026F3029EDB2C800B0A4D1 /* Helpers */,
+				CE026F2D29EDB21800B0A4D1 /* Protocols.swift */,
 				CE3CC56A29ED57A80043094E /* Assets.xcassets */,
 				CE3CC58429ED65400043094E /* Colors.xcassets */,
 				CE3CC56C29ED57A80043094E /* LaunchScreen.storyboard */,
@@ -204,9 +251,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3CC56629ED57A40043094E /* MainViewController.swift in Sources */,
+				CE026F2C29EDB1E600B0A4D1 /* UICollectionView+Extension.swift in Sources */,
 				CE3CC57829ED61D70043094E /* MainView.swift in Sources */,
+				CE026F2A29EDB12700B0A4D1 /* MainLayout.swift in Sources */,
+				CE026F3429EDD7E900B0A4D1 /* ItemView.swift in Sources */,
 				CE3CC56229ED57A40043094E /* AppDelegate.swift in Sources */,
 				CE3CC57A29ED62E50043094E /* MainCollectionViewCell.swift in Sources */,
+				CE026F3629EDD7FA00B0A4D1 /* ItemViewController.swift in Sources */,
+				CE026F2E29EDB21800B0A4D1 /* Protocols.swift in Sources */,
 				CE3CC58729ED663E0043094E /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
