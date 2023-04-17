@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE3CC56229ED57A40043094E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CC56129ED57A40043094E /* AppDelegate.swift */; };
-		CE3CC56429ED57A40043094E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CC56329ED57A40043094E /* SceneDelegate.swift */; };
 		CE3CC56629ED57A40043094E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CC56529ED57A40043094E /* ViewController.swift */; };
-		CE3CC56929ED57A40043094E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3CC56729ED57A40043094E /* Main.storyboard */; };
 		CE3CC56B29ED57A80043094E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3CC56A29ED57A80043094E /* Assets.xcassets */; };
 		CE3CC56E29ED57A80043094E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3CC56C29ED57A80043094E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		CE3CC55E29ED57A40043094E /* Agrohub_searcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agrohub_searcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3CC56129ED57A40043094E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE3CC56329ED57A40043094E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE3CC56529ED57A40043094E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE3CC56829ED57A40043094E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE3CC56A29ED57A80043094E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3CC56D29ED57A80043094E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3CC56F29ED57A80043094E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				CE3CC56129ED57A40043094E /* AppDelegate.swift */,
-				CE3CC56329ED57A40043094E /* SceneDelegate.swift */,
 				CE3CC56529ED57A40043094E /* ViewController.swift */,
-				CE3CC56729ED57A40043094E /* Main.storyboard */,
 				CE3CC56A29ED57A80043094E /* Assets.xcassets */,
 				CE3CC56C29ED57A80043094E /* LaunchScreen.storyboard */,
 				CE3CC56F29ED57A80043094E /* Info.plist */,
@@ -129,7 +123,6 @@
 			files = (
 				CE3CC56E29ED57A80043094E /* LaunchScreen.storyboard in Resources */,
 				CE3CC56B29ED57A80043094E /* Assets.xcassets in Resources */,
-				CE3CC56929ED57A40043094E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,21 +176,12 @@
 			files = (
 				CE3CC56629ED57A40043094E /* ViewController.swift in Sources */,
 				CE3CC56229ED57A40043094E /* AppDelegate.swift in Sources */,
-				CE3CC56429ED57A40043094E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE3CC56729ED57A40043094E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE3CC56829ED57A40043094E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE3CC56C29ED57A80043094E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -335,7 +319,6 @@
 				INFOPLIST_FILE = Agrohub_searcher/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -365,7 +348,6 @@
 				INFOPLIST_FILE = Agrohub_searcher/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
