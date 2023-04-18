@@ -9,7 +9,6 @@ class MainView: UIView {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register(cellWithClass: MainCollectionViewCell.self)
         collectionView.backgroundColor = .clear
-        // collectionView.showsVerticalScrollIndicator = false
         return collectionView
     }()
 

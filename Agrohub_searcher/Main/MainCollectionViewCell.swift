@@ -1,35 +1,30 @@
 // MainCollectionViewCell.swift
 // AgroHub_Searcher. Created by Zlata Guseva.
 
+import Kingfisher
 import SnapKit
 import UIKit
 
 class MainCollectionViewCell: UICollectionViewCell {
-    var itemInageView: UIImageView = {
+    private var itemImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = .red
-        imageView.layer.cornerRadius = 8
         return imageView
     }()
 
-    var itemNameLabel: UILabel = {
+    private var itemNameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 13)
         label.textColor = UIColor.mainTitleTextColor
-        label.text = "itemNameLabel"
         label.numberOfLines = 0
-        label.textAlignment = .left
         return label
     }()
 
-    var itemDescriptionLabel: UILabel = {
+    private var itemDescriptionLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 11)
+        label.font = UIFont.systemFont(ofSize: 12)
         label.textColor = UIColor.subTitleTextColor
-        label.numberOfLines = 0
-        label.text = "itemDescriptionLabel"
-        label.textAlignment = .left
+        label.numberOfLines = 5
         return label
     }()
 
@@ -57,22 +52,13 @@ class MainCollectionViewCell: UICollectionViewCell {
     }
 
     private func addSubviews() {
-//        contentView.addSubview(itemInageView)
-//        contentView.addSubview(itemNameLabel)
-//        contentView.addSubview(itemDescriptionLabel)
-        addSubview(itemInageView)
+        addSubview(itemImageView)
         addSubview(itemNameLabel)
         addSubview(itemDescriptionLabel)
     }
 
     private func makeConstraints() {
-//        contentView.snp.makeConstraints { make in
-//            make.top.bottom.equalToSuperview()
-//            make.trailing.leading.equalToSuperview()
-//            make.leading.equalToSuperview().offset(8)
-//        }
-
-        itemInageView.snp.makeConstraints { make in
+        itemImageView.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(12)
             make.top.equalToSuperview().offset(12)
             make.height.equalTo(82)
@@ -81,12 +67,23 @@ class MainCollectionViewCell: UICollectionViewCell {
 
         itemNameLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(12)
-            make.top.equalTo(itemInageView.snp.bottom).offset(12)
+            make.trailing.equalToSuperview().inset(16)
+            make.top.equalTo(itemImageView.snp.bottom).offset(12)
         }
 
         itemDescriptionLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(12)
+            make.trailing.equalToSuperview().inset(16)
             make.top.equalTo(itemNameLabel.snp.bottom).offset(6)
         }
+    }
+}
+
+extension MainCollectionViewCell: Configurable {
+    func configure(with model: Product) {
+        let url1 = "http://shans.d2.i-partner.ru" + model.image
+        itemImageView.kf.setImage(with: URL(string: url1.preparedStringForURL))
+        itemNameLabel.text = model.name
+        itemDescriptionLabel.text = model.description
     }
 }
