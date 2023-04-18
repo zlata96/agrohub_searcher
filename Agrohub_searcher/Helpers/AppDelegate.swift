@@ -7,17 +7,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
+    var router = Router.shared
+
     func application(
         _: UIApplication,
         didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        setupRootViewController()
-        return true
-    }
-
-    private func setupRootViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = MainViewController()
         window?.makeKeyAndVisible()
+        router.loadInitialScreen()
+        return true
     }
 }

@@ -85,20 +85,20 @@ class ItemView: UIView {
     private func makeConstraints() {
         itemImageView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalToSuperview().offset(40)
+            make.top.equalToSuperview().offset(80)
             make.height.equalTo(183)
             make.width.equalTo(117)
         }
 
         starButton.snp.makeConstraints { make in
             make.trailing.equalToSuperview().inset(36)
-            make.top.equalToSuperview().offset(40)
+            make.top.equalToSuperview().offset(80)
             make.size.equalTo(28)
         }
 
         iconImageView.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(24)
-            make.top.equalToSuperview().offset(40)
+            make.top.equalToSuperview().offset(80)
             make.size.equalTo(30)
         }
 

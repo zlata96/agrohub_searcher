@@ -3,8 +3,9 @@
 
 import UIKit
 
-class MainViewController: NavigationController {
+class MainViewController: UIViewController {
     private var mainView = MainView()
+    private var router = Router.shared
     private let productsService = ProductsService()
     private var productsData: [Product] = []
 
@@ -30,9 +31,7 @@ class MainViewController: NavigationController {
 
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let itemViewController = ItemViewController(product: productsData[indexPath.row])
-
-        present(itemViewController, animated: true)
+        router.setRootViewController(controller: ItemViewController(product: productsData[indexPath.row]))
     }
 }
 

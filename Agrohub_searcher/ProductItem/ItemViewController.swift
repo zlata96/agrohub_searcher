@@ -3,7 +3,7 @@
 
 import UIKit
 
-class ItemViewController: NavigationController {
+class ItemViewController: UIViewController {
     var itemView = ItemView()
     var product: Product
 
